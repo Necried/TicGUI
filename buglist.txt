@@ -1,0 +1,12 @@
+Buglist:
+1. Sometimes clicking buttons does not register at all
+	Elaboration: Functions being called twice on run module
+	Cause: See elaboration
+	Fix: Create variables to store return values. Use variables for conditionals
+2. At the main menu, clicking play causes the main menu screen to pop up again (resolves on second pass)
+	Cause and Fix: See 1.
+3. Re-looping the game causes an unexpected exit at SelectionPage()
+	Cause: main() ends since there is no recursive call to it 
+	Fix: recursively call main() everytime the player wants to play again 
+4. Clicking at the board while it's computer's turn causes unexpected piece placement
+	## TODO
